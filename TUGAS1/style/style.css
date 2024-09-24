@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.icon {
+  position: relative;
+  top: 5px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f9;
+  padding: 20px;
+  margin: 0;
+}
+
+.name {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  margin: 0 auto 85px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.info h2 {
+  color: rgba(0, 0, 0, 0.896);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.name h1 {
+  font-style: italic;
+}
+
+.info h3 {
+  color: rgba(224, 109, 27, 0.896);
+  margin-bottom: 5px; /* Mengurangi jarak antara judul dan list */
+  margin-top: 0; /* Menghapus jarak atas dari h3 */
+}
+
+.name span {
+  color: rgba(224, 109, 27, 0.896);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e06d1b;
+  text-decoration: underline;
+}
+
+.info ul {
+  margin-top: 5px; /* Mengurangi jarak vertikal antara Contact dengan list item */
+}
+
+.info ul li {
+  margin-bottom: 5px; /* Mengurangi jarak antar item di dalam Contact */
+}
+
+@media (max-width: 768px) {
+  .card {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .card img {
+    margin-bottom: 20px;
+    transition: 0.3s;
+  }
+
+  .info {
+    align-items: center;
+    margin-left: 0;
+    transition: 0.3s;
+  }
+}
